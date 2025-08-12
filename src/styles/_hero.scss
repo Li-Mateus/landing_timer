@@ -1,0 +1,35 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-color: rgb(0, 0, 46);
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        max-width: 240px;
+        display: block;
+        border-radius: 100%;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            max-width: 140px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
